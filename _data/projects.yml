@@ -1,0 +1,47 @@
+# Newest first.
+
+- title: Formal proof of termination of Tendermint in TLA+
+  description: |
+    - TLA+ specification of the Tendermint BFT consensus protocol with proofs of 
+      agreement (safety) and termination (liveness).
+    - Found errors and gaps in the informal proof of the [Tendermint paper](https://arxiv.org/abs/1807.04938).
+    - The first such proof of liveness for a serious protocol like Tendermint. 
+      And probably the largest TLA+ proof written to date, with over 12,893 generated proof obligations.
+
+  links:
+    - name: GitHub
+      url: https://github.com/circlefin/formal-tendermint/tree/master/tendermint/tla
+
+- title: Malachite x Reth
+  description: |
+    - A proof of concept that connects Malachite, a BFT consensus engine written in Rust,
+      to Reth, an Ethereum execution client, through the Engine API.
+    - It shows that a Tendermint-style consensus engine can drive a standard Ethereum
+      execution layer with fast, deterministic finality.
+    - This prototype became the base of the [Arc blockchain](https://github.com/circlefin/arc-node).
+  links:
+    - name: Blog post
+      url: https://informal.systems/blog/malachite-x-reth-part-2-2025
+    - name: GitHub
+      url: https://github.com/circlefin/malaketh-layered
+
+- title: DOG gossip protocol
+  description: |
+    - Dynamic Optimal Graph (DOG) is a novel gossip protocol for P2P networks that builds spanning trees overlays for reducing duplicate messages between nodes.
+    - Initially designed for the mempool of the [CometBFT](https://github.com/cometbft/cometbft) consensus engine, but it can be used as a generic gossip protocol.
+  links:
+    - name: Blog post
+      url: https://informal.systems/blog/a-new-mempool-gossip-protocol-for-cometbft
+    - name: Specification
+      url: https://github.com/cometbft/cometbft/blob/c451150275612dc4182e4d47f6722f2e49209829/spec/mempool/gossip/dog.md
+    - name: GitHub issue
+      url: https://github.com/cometbft/cometbft/issues/3263
+
+- title: Automated provers for the TLA+ Proof System
+  description: |
+    - For my PhD thesis, I integrated SMT solvers and other automated theorem provers into the [TLA+ Proof System](https://github.com/tlaplus/tlapm).
+    - The work translates TLA+ set theory into first-order logic, with type synthesis to produce many-sorted encodings that solvers handle well.
+    - This backend is now the main automated proof method in TLAPS.
+  links:
+    - name: Thesis
+      url: https://inria.hal.science/tel-01751181v2

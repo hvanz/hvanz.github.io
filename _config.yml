@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
-title: hvanz's homepage
-# description: Bookmark this to keep an eye on my project updates!
+title: Hernán Vanzetto
+description: Formal Verification + Distributed Systems
+exclude:
+  - README.md
