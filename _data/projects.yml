@@ -12,6 +12,19 @@
     - name: GitHub
       url: https://github.com/circlefin/formal-tendermint/tree/master/tendermint/tla
 
+- title: Tendermint Consensus Visual Simulator
+  description: |
+    - An interactive web simulator for the Tendermint BFT consensus algorithm, for educational purposes.
+    - Explore nondeterministic executions step by step, and see how node states change
+      through the propose, prevote, and precommit phases.
+    - Based on the canonical [Tendermint paper](https://arxiv.org/abs/1807.04938).
+    - With a GST scheduler mode and Byzantine nodes.
+  links:
+    - name: Simulator
+      url: https://hvanz.github.io/tendermint-sim/dist/tendermint-sim.html
+    - name: GitHub
+      url: https://github.com/hvanz/tendermint-sim
+
 - title: Malachite x Reth
   description: |
     - A proof of concept that connects Malachite, a BFT consensus engine written in Rust,
