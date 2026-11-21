@@ -1,6 +1,6 @@
 # Newest first.
 
-- title: Formal proof of termination of Tendermint in TLA+
+- title: Formal proofs of agreement and termination of Tendermint in TLA+
   description: |
     - TLA+ specification of the Tendermint BFT consensus protocol with proofs of 
       agreement (safety) and termination (liveness).
